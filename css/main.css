@@ -1,0 +1,45 @@
+body {
+    color: #773344;
+    height: 6.6in;
+    width: 9.4in;
+    background-image: url(../images/ipad.png);
+    background-repeat: no-repeat;
+    font-family: "Arial", Arial, sans-serif;
+    font-weight: thin;
+    color: #D80027;
+}
+.screen {
+    margin-top: 42px;
+    height: 5.7in;
+    margin-left: 90px;
+    margin-right: 75px;
+    border-style: dotted;
+    background-color: white;
+}
+.navbar {
+    background-color: #dee1e5;
+    color:white;
+    height: 80px;
+}
+.navbar a {
+    color: white;
+}
+
+.navprofile {
+    float:right;
+    width: 10%;
+}
+.backbutton {
+    padding:20px;
+    float:left;
+}
+.homeicon {
+}
+.professorname {
+    font-size: 20px;
+}
+.navprofileimage {
+    border-radius: 50%;
+    width:50px;
+    margin-top: 10px;
+}
