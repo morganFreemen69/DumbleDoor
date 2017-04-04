@@ -93,3 +93,11 @@ hr {
 .shortcuts {
     text-align: center;
 }
+
+.button {
+    text-align: center;
+    background-color: #D80027;
+    color: white;
+    padding: 15px;
+    margin: 50px;
+}
