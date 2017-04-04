@@ -102,3 +102,14 @@ hr {
     margin: 50px;
     text-decoration: none;
 }
+.button:hover {
+    background-color: white;
+    color: #D80027;
+}
+.checkInForm {
+    display: none;
+    margin: 50px;
+}
+.submit {
+    display: none;
+} 

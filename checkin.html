@@ -14,11 +14,20 @@
             </div>
         </div>
         <div class="body">
-            <div class="dialog" style="text-align:center;padding: 60px;">
-                <p style="padding: 40px;">
+            <div class="container" style="text-align:center;padding: 60px;">
+                <p style="margin-bottom:50px;">
                     Michael is currently holding office hours!
                 </p>
-                <a class="button" href="lineup.html"> I want to see Michael.</a>
+                <div class="checkInForm">
+                    <form>
+                        <p>Name</p>
+                        <input></input>
+                        <p>Email</p>
+                        <input></input>
+                    
+                    </form>
+                </div>
+                <a class="button accordion"> I want to see Michael.</a>
             </div>
         </div>
     </div>
@@ -48,4 +57,26 @@
             </div>
         </div>
     </div>
+    <script src="vendor/jquery/jquery.min.js"></script>  
+    <script>
+        $(".accordion").click(function () {
+
+            $header = $(this);
+            //getting the next element
+            $content = $header.prev();
+            if ($content.is(":visible")) {
+                window.location.href = "submit.html";
+            }
+            $submit = $header.next();
+            //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+            $content.slideToggle(300, function () {
+                //execute this after slideToggle is done
+                //change text of header based on visibility of content div
+                $header.text(function () {
+                    //change text based on condition
+                    return $content.is(":visible") ? "Submit my position." : "I want to see Michael.";
+                });
+            });
+        });
+    </script> 
 </body>
