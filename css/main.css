@@ -7,11 +7,10 @@ body {
     color: #D80027;
 }
 .screen {
-    margin-top: 33px;
+    margin-top: 35px;
     height: 5.8in;
     margin-left: 88px;
     margin-right: 60px;
-    border-style: dotted;
     margin-bottom: 40px;
     background-color: white;
     width: 7.7in;
@@ -23,12 +22,15 @@ body {
     height: 80px;
 }
 .navbar a {
+    margin-top:13px;
     color: white;
+    text-decoration: none;
 }
 
 .navprofile {
     float:right;
     width: 10%;
+    margin-top: 15px;
 }
 .backbutton {
     padding:20px;
