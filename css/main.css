@@ -39,7 +39,8 @@ body {
 .homeicon {
 }
 .professorname {
-    font-size: 20px;
+    font-size: 50px;
+    margin:0px;
 }
 .navprofileimage {
     border-radius: 50%;
@@ -76,4 +77,17 @@ hr {
     height: 1px;
     background: #c8cccf;
     border-style: none;
+}
+
+.shortcut {
+    display: inline-block;
+    text-align: center;
+}
+.shortcut img {
+    width: 100px; 
+    padding: 20px;
+    padding-bottom: 0px;
+}
+.shortcuts {
+    text-align: center;
 }
