@@ -1,20 +1,21 @@
 body {
     color: #773344;
-    height: 6.6in;
-    width: 9.4in;
     background-image: url(../images/ipad.png);
     background-repeat: no-repeat;
-    font-family: "Arial", Arial, sans-serif;
+    font-family: "Source Sans Pro", Helvetica, sans-serif;
     font-weight: thin;
     color: #D80027;
 }
 .screen {
-    margin-top: 42px;
-    height: 5.7in;
-    margin-left: 90px;
-    margin-right: 75px;
+    margin-top: 33px;
+    height: 5.8in;
+    margin-left: 88px;
+    margin-right: 60px;
     border-style: dotted;
+    margin-bottom: 40px;
     background-color: white;
+    width: 7.7in;
+    float: left;
 }
 .navbar {
     background-color: #dee1e5;
@@ -40,6 +41,37 @@ body {
 }
 .navprofileimage {
     border-radius: 50%;
-    width:50px;
-    margin-top: 10px;
+    width: 50px;
+}
+.namecard {
+    float: left;
+    margin-top: 30px;
+    width: 300px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 13px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.profilepic {
+    width: 60px; 
+    border-radius: 50%;
+    margin: 5px;
+}
+.author {
+    display: inline-block;
+}
+.author p {
+    font-size: 10px;
+    text-align: center;
+}
+.clearboth {
+    clear: both;
+}
+hr {
+    display: block;
+    top: 50%;
+    height: 1px;
+    background: #c8cccf;
+    border-style: none;
 }
