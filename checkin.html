@@ -3,19 +3,80 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
 </head>
-	<body>
-        <div class="screen">
-            <div class="navbar">
-                <a href="index.html" class="backbutton">Back</a>
-                <div class="navprofile">
-                    <img class="navprofileimage" src="images/michael.jpg" alt="" />
-                </div>
-            </div>
-            <div class="body">
-                <p style="text-align:center; padding: 40px;">
-                    This is the check in page
-                </p>
+<body>
+    <div class="screen">
+        <div class="navbar">
+            <a href="index.html" class="backbutton">Back</a>
+            <div class="navprofile">
+                <img class="navprofileimage" src="images/michael.jpg" alt="" />
             </div>
         </div>
-    </body>
+        <div class="body">
+            <div class="container" style="text-align:center;padding: 60px;">
+                <p style="margin-bottom:50px;">
+                    Michael is currently holding office hours!
+                </p>
+                <div class="checkInForm">
+                    <form>
+                        <p>Name</p>
+                        <input></input>
+                        <p>Email</p>
+                        <input></input>
+                    
+                    </form>
+                </div>
+                <a class="button accordion"> I want to see Michael.</a>
+            </div>
+        </div>
+    </div>
+    <div class="namecard animated fadeInRight">
+        <img style="width:300px;" src="images/logo.png">
+        <p>Application to run on tablet in front of each room in the Brendan Iribe Center.</p>
+        <hr>
+        <h3 style="text-align: center;">Check In Page</h3>
+        <p> Check into line of students waiting to see professor, or leave professor a note if professor is not available</p>
+        <hr>
+        <div class="credits">
+            <div class="author">
+                <img class="profilepic" src="images/bao.jpg" alt="" />
+                <p>Bao Dinh</p>
+            </div>
+            <div class="author">
+                <img class="profilepic" src="images/dustin.jpg" alt="" />
+                <p>Dustin Kang</p>
+            </div>
+            <div class="author">
+                <img class="profilepic" src="images/elton.jpg" alt="" />
+                <p>Elton Tian</p>
+            </div>
+            <div class="author">
+                <img class="profilepic"  src="images/michael.jpg" alt="" />
+                <p>Michael George</p>
+            </div>
+        </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>  
+    <script>
+        $(".accordion").click(function () {
+
+            $header = $(this);
+            //getting the next element
+            $content = $header.prev();
+            if ($content.is(":visible")) {
+                window.location.href = "submit.html";
+            }
+            $submit = $header.next();
+            //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+            $content.slideToggle(300, function () {
+                //execute this after slideToggle is done
+                //change text of header based on visibility of content div
+                $header.text(function () {
+                    //change text based on condition
+                    return $content.is(":visible") ? "Submit my position." : "I want to see Michael.";
+                });
+            });
+        });
+    </script> 
+</body>
